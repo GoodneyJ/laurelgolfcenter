@@ -7,6 +7,15 @@
 .FooterContainer .AddressContainer {
   margin: 2rem 0;
 }
+.FooterContainer .AddressContainer p {
+  margin: 0.5rem 0;
+}
+.FooterContainer .ContactContainer p {
+  margin: 0.5rem 0;
+}
+.FooterContainer .ContactContainer .socials {
+  margin-left: 0;
+}
 .FooterContainer .ContactContainer .socials svg {
-  margin: 0.5rem;
+  margin: 1rem 0.5rem;
 }/*# sourceMappingURL=footer.module.css.map */

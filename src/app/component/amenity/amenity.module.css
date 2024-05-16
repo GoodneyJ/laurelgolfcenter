@@ -10,16 +10,24 @@
   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
   transition: 0.2s ease all;
 }
+.AmenityContainer::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Learn More";
+  color: #fff;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.911);
+  transition: 0.2s ease all;
+}
 .AmenityContainer:hover {
   cursor: pointer;
 }
 .AmenityContainer:hover::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  color: green;
-  z-index: 100000000;
+  opacity: 1;
 }
 .AmenityContainer h4 {
   margin: 0 auto;
@@ -30,6 +38,10 @@
 
 @media screen and (min-width: 800px) {
   .AmenityContainer {
+    height: 250px;
+    width: 250px;
+  }
+  .AmenityContainer::after {
     height: 250px;
     width: 250px;
   }

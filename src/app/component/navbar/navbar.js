@@ -57,7 +57,7 @@ export default function navbar() {
     <div className={styles.NavbarContainer} ref={navbar}>
 
  
-      <Image src="/LaurelGolfCrest.png" width={50} height={50}/>
+      <Image src="/LaurelGolfCrest.png" width={75} height={75}/>
 
 
       <div id="menu-btn" className={styles.burgerContainer} ref={menuRef} onClick={handleClick}>

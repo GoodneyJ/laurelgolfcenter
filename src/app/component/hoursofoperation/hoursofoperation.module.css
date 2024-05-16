@@ -34,4 +34,13 @@
 
 .bold {
   font-weight: bold;
+}
+
+.QuestionsNumber {
+  font-size: 1.5rem;
+  transition: 0.2s ease all;
+}
+.QuestionsNumber:hover {
+  cursor: pointer;
+  color: rgb(104, 104, 247);
 }/*# sourceMappingURL=hoursofoperation.module.css.map */

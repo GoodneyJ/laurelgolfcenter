@@ -23,7 +23,7 @@
   z-index: 170000 !important;
 }
 .NavbarContainer .burgerContainer .burger {
-  width: 20px;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   border-radius: 5px;
@@ -35,7 +35,7 @@
 .NavbarContainer .burgerContainer .burger::before, .NavbarContainer .burgerContainer .burger::after {
   content: "";
   position: absolute;
-  width: 20px;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   z-index: 170000 !important;
@@ -44,10 +44,10 @@
   border-radius: 5px;
 }
 .NavbarContainer .burgerContainer .burger::before {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 .NavbarContainer .burgerContainer .burger::after {
-  transform: translateY(8px);
+  transform: translateY(10px);
 }
 .NavbarContainer .burgerContainer .burger:hover {
   background-color: #F8F8F8;

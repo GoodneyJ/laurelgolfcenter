@@ -57,8 +57,8 @@ export default function hoursofoperation() {
         </div>
       </div>
 
-        <h3>Questions?</h3>
-        <p>301-725-4646</p>
+        <h3 className={styles.QuestionsHeading}>Questions?</h3>
+        <p className={styles.QuestionsNumber}>301-725-4646</p>
         <style>
             {`
             

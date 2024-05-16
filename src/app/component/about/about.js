@@ -1,7 +1,9 @@
 import React from 'react'
+import Image from 'next/image'
 import Amenity from '../amenity/amenity'
 import { LiaGolfBallSolid } from "react-icons/lia";
 import { LuPartyPopper } from "react-icons/lu";
+
 import styles from './about.module.css'
 export default function about() {
   return (
@@ -16,10 +18,10 @@ export default function about() {
             <div className={styles.GridContainer}>
                 <div className={styles.row}>
                   <Amenity icon={<LiaGolfBallSolid className={styles.icon}/>} text="Driving Range"/>
-                  <Amenity icon={<LiaGolfBallSolid className={styles.icon}/>} text="Driving Range"/>
+                  <Amenity icon={<Image src="/baseball.svg" className={styles.icon} height={45} width={45}/>} text="Driving Range"/>
                 </div>
                 <div className={styles.row}>
-                <Amenity icon={<LiaGolfBallSolid className={styles.icon}/>} text="Driving Range"/>
+                <Amenity icon={<Image src="/golfFlag.svg" className={styles.icon} height={45} width={45}/>} text="Driving Range"/>
                 <Amenity icon={<LuPartyPopper  className={styles.icon}/>} text="Driving Range"/>
                 </div>
             </div>

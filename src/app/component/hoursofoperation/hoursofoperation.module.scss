@@ -45,3 +45,17 @@
     font-weight: bold;
 }
 
+.QuestionsHeading {
+
+}
+
+.QuestionsNumber {
+    font-size: 1.5rem;
+    transition: .2s ease all;
+    &:hover {
+
+        cursor: pointer;
+        color: rgb(104, 104, 247);
+    }
+}
+
