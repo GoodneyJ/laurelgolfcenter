@@ -1,0 +1,12 @@
+.FooterContainer {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 3rem 2rem;
+  font-size: 1.25rem;
+}
+.FooterContainer .AddressContainer {
+  margin: 2rem 0;
+}
+.FooterContainer .ContactContainer .socials svg {
+  margin: 0.5rem;
+}/*# sourceMappingURL=footer.module.css.map */

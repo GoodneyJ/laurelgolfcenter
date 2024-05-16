@@ -29,9 +29,11 @@
             margin: 1rem auto;
             width: 80%;
             padding: 1rem;
+            max-width: 300px;
         }
         button {
             width: 35%;
+            max-width: 200px;
             margin: 0 auto;
             background-color: #8c8c8c;
             outline: none;
@@ -44,4 +46,19 @@
             font-size: 1.05rem;
         }
     }
+}
+
+@media screen and (min-width: 800px) {
+    .SubscribeContainer {
+
+        .form {
+            .h4 {
+                font-size: 2rem;
+            }
+
+            input {
+                width: 20px;
+            }
+        }
+    }   
 }

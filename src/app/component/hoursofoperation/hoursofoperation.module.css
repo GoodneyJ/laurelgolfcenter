@@ -1,0 +1,37 @@
+.HoursContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.HoursContainer .ContentWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-width: 500px;
+}
+.HoursContainer .ContentWrapper .StatusWrapper, .HoursContainer .ContentWrapper .HoursWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.HoursContainer .ContentWrapper .StatusWrapper div, .HoursContainer .ContentWrapper .HoursWrapper div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.HoursContainer .ContentWrapper .HoursWrapper ul li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.HoursContainer h3 {
+  font-family: "EB Garamond";
+  font-size: 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.bold {
+  font-weight: bold;
+}/*# sourceMappingURL=hoursofoperation.module.css.map */

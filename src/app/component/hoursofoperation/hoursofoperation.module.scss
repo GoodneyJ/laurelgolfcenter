@@ -1,0 +1,47 @@
+.HoursContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    .ContentWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        max-width: 500px;
+        .StatusWrapper, .HoursWrapper {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                margin: .5rem 0;
+            }
+        }
+
+        .HoursWrapper {
+            ul {
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: .5rem 0;
+                }
+            }
+        }
+
+
+    }
+
+    h3 {
+        font-family: 'EB Garamond';
+        font-size: 1.5rem;
+        margin: 1.25rem 0;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+

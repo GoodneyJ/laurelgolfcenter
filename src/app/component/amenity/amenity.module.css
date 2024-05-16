@@ -8,6 +8,7 @@
   align-items: center;
   margin: 2rem 0;
   box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.2s ease all;
 }
 .AmenityContainer:hover {
   cursor: pointer;
@@ -25,4 +26,11 @@
 }
 .AmenityContainer svg {
   font-size: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  .AmenityContainer {
+    height: 250px;
+    width: 250px;
+  }
 }/*# sourceMappingURL=amenity.module.css.map */
