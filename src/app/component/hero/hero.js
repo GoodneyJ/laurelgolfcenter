@@ -6,7 +6,7 @@ import styles from './hero.module.css'
 export default function hero() {
   return (
     <div className={styles.HeroContainer}>
-        <video id="video" autoplay="autoplay" muted loop className='video'>         
+        <video id="video" autoplay="autoplay" muted loop playsInline className='video'>         
             <source src={'/sane.mp4'} type="video/mp4"/>       
         </video>
 
