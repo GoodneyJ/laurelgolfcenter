@@ -6,23 +6,28 @@ import styles from './hero.module.css'
 export default function hero() {
   return (
     <div className={styles.HeroContainer}>
-        <video id="video" autoplay="autoplay" muted loop playsInline className='video'>         
-            <source src={'/sane.mp4'} type="video/mp4"/>       
-        </video>
-
 
         <div className={styles.HeroContent}>
             <h1>Laurel Golf Center</h1>
             <p>Premier destination for improvement & family-fun</p>
         </div>
+
+        <video id="video" autoPlay muted loop playsInline className='video'>         
+            <source src={'/sane.mp4'} type="video/mp4"/>       
+        </video>
+
         <style>
             {`
                 .video {
-                    object-fit: cover;   
-                    width: 100%;
+
+                    position: absolute;
+                    width:100%;  
+                    left: 0%;
+                    top: 0%;
+                    object-fit: cover;
+ 
                     height: 100%;
-                    position: fixed;
-                    z-index: -1; 
+                    z-index: -100 !important;
                 }
             
             `}

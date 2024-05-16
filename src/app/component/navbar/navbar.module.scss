@@ -1,5 +1,133 @@
 .NavbarContainer {
-    background-image: url('/LaurelGolfCrest.png');
-    height: 25px;
-    width: 25px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999999 !important;
+    transition: 0.2s ease all;
+
+    .logo {
+        color: white;
+    }
+
+    .burgerContainer {
+        margin: 1rem 1rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        z-index: 170000 !important;
+        .burger {
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(255,101,47,.2);
+            transition: transform 0.5s ease;
+            margin: 0;
+            z-index: 170000 !important;
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                background-color: #fff;
+                z-index: 170000 !important;
+                box-shadow: 0 2px 5px rgba(255,101,47,.2);
+                transition: transform 0.5s ease;
+                border-radius: 5px;
+            }
+                
+            &::before {
+                transform: translateY(-8px);
+            }
+    
+            &::after {
+                transform: translateY(8px);
+            }
+    
+            &:hover {
+                
+                background-color:#F8F8F8;
+                &::after, &::before {
+                    background-color:#F8F8F8;
+                }
+            }
+
+
+        }
+    }
+
+    .sidemenu {
+        transition: .2s ease all;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 50%;
+        background-color: #1f1f1f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        transform: translateX(100%);
+        a {
+            margin: 2rem 0;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+
+    }
 }
+
+.display {
+    transform: translateX(0) !important;
+}
+
+
+.NavbarContainer .burgerContainer.open .burger {
+
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+
+    &::before {
+        transform: rotate(45deg) translate(35px, -35px);
+        background-color: #F8F8F8 !important;
+
+    }
+
+    &::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+        background-color: #F8F8F8 !important;
+
+    }   
+        
+    }
+
+    .scrolled {
+        transition: 0.2s ease all;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px 3px #00000080;
+
+    }
+
+    .changedBG .burger {
+        background-color: #1f1f1f !important;
+        &::before {
+            transform: rotate(45deg) translate(35px, -35px);
+            background-color: #1f1f1f !important;
+        }
+    
+        &::after {
+            transform: rotate(-45deg) translate(35px, 35px);
+            background-color: #1f1f1f !important;
+        }  
+    }

@@ -1,21 +1,29 @@
 .HeroContainer {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-}
-.HeroContainer .HeroContent {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.HeroContainer .HeroContent {
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
 }
 .HeroContainer .HeroContent h1, .HeroContainer .HeroContent p {
   text-shadow: 3px 3px 8px rgb(0, 0, 0), 0px 0px 22px rgb(0, 0, 0);
+  margin-left: 3rem;
+}
+.HeroContainer .HeroContent h1 {
+  font-family: "EB Garamond";
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+}
+.HeroContainer .HeroContent p {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 1.15rem;
+  width: 75%;
 }
 
 @media screen and (min-width: 1200px) {

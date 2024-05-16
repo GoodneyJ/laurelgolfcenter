@@ -1,0 +1,35 @@
+
+.AmenityContainer {
+    height: 150px;
+    width: 150px;
+    background-color: #Fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.25);
+
+    &:hover {
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            color: green;
+            z-index: 100000000;
+        }
+    }
+    h4 {
+        margin: 0 auto;
+    }
+    svg {
+        font-size: 3rem;
+    }
+
+}
+
