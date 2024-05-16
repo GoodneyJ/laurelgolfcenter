@@ -1,0 +1,28 @@
+.HeroContainer {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.HeroContainer .HeroContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+}
+.HeroContainer .HeroContent h1, .HeroContainer .HeroContent p {
+  text-shadow: 3px 3px 8px rgb(0, 0, 0), 0px 0px 22px rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 1200px) {
+  .HeroContainer .HeroContent h1 {
+    font-size: 4rem;
+  }
+  .HeroContainer .HeroContent p {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=hero.module.css.map */
